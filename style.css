@@ -1,0 +1,34 @@
+/* === style.css === */
+
+/* Set ALL text elements to black */
+.stMarkdown, .stText, .stDataFrame, .stTextInput input,
+.stButton button, .stMetric, .stCheckbox label,
+.stSelectbox label, .stAlert, .uploadedFileName, .uploadText,
+.block-container, .row-widget.stRadio > div, label, span, div {
+    color: black !important;
+}
+
+/* Headings with clean font */
+h1, h2, h3, h4 {
+    font-family: 'Segoe UI', sans-serif;
+    color: black !important;
+}
+
+/* Buttons */
+.stButton > button {
+    color: black !important;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* PREVIEW textarea: white font for contrast */
+.stTextArea textarea {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Inputs background */
+.stTextInput > div > div > input,
+.stTextArea > div > textarea {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}

@@ -1,0 +1,11 @@
+paper_text,clarity_score,novelty_score,citation_strength
+"This paper introduces a novel neural network architecture for text classification.",4,5,3
+"The authors review existing methods and provide incremental improvements.",3,2,4
+"A comprehensive analysis of climate data using statistical techniques is presented.",5,3,3
+"The research revisits older models without significant updates.",2,1,2
+"The team proposes a new algorithm that outperforms the state-of-the-art.",4,5,4
+"This paper lacks sufficient detail in its methodology.",2,2,3
+"A well-written paper with a clear hypothesis and results.",5,4,4
+"The citations used are outdated and not well-integrated.",3,3,2
+"The abstract and conclusion sections are vague.",2,2,3
+"Strong novelty but the clarity of writing could be improved.",3,5,4
