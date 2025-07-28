@@ -2,6 +2,6 @@ streamlit
 pandas
 scikit-learn
 joblib
-language-tool-python
 PyMuPDF
 plotly
+requests
