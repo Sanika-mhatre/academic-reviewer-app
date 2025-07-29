@@ -75,21 +75,22 @@ if uploaded_file:
     else:
         st.success("🚀 Excellent — Great work! Ready for submission.")
 
-    # Grammar Check
-    with st.spinner("✍️ Checking grammar..."):
-        grammar_errors = check_grammar(text)
+# Grammar Check
+with st.spinner("✍️ Checking grammar..."):
+    grammar_errors = check_grammar(text)
 
-    st.subheader("✍️ Grammar Report")
-    st.write(f"📍 **Total Grammatical Errors Found:** {len(grammar_errors)}")
+st.subheader("✍️ Grammar Report")
+st.write(f"📍 **Total Grammatical Errors Found:** {len(grammar_errors)}")
 
-    if st.checkbox("📌 Show grammar errors"):
-        for err in grammar_errors:
-            error_msg = err.get('error', 'Unknown error')
-            suggestions = ', '.join(err.get('suggestions', ['No suggestion']))
-            st.markdown(
-                f"<p class='black-text'>• <strong>Error:</strong> {error_msg}<br>↳ Suggestion: {suggestions}</p><hr>",
-                unsafe_allow_html=True
-            )
+if st.checkbox("📌 Show grammar errors"):
+    for err in grammar_errors:
+        error_msg = err.get("error", "Unknown error")
+        suggestions = err.get("suggestions", ["No suggestion available"])
+        st.markdown(
+            f"<p class='black-text'>• <strong>Error:</strong> {error_msg}<br>"
+            f"↳ <strong>Suggestion:</strong> {', '.join(suggestions)}</p><hr>",
+            unsafe_allow_html=True
+        )
 
     # Plagiarism Check
     with st.spinner("🔍 Checking plagiarism..."):
